@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>404 - Page Not Found</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="px-4 md:px-10 lg:px-20">
+<div class="flex justify-start py-5">
+<p class="text-[#111618] dark:text-white text-2xl font-black tracking-[-0.033em]">SPORTS4AUTISM CARETAKER</p>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5 px-4">
+<div class="layout-content-container flex flex-col items-center max-w-[960px] flex-1">
+<div class="flex flex-col items-center gap-6 text-center">
+<div class="bg-center bg-no-repeat bg-contain aspect-square w-full max-w-[300px]" data-alt="Illustration of a sad child looking down at their phone." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDwcTw7R7YjxYMJ_1Gx1_6iQ00XeWOYSiWAM8sGnMoYKZuTCpXWEp6iboiIowGW1GYALNTrZq-r7fHyIVdya1HbgQV5C81oLbXUo_Wfzy0zXfnW8OC3eTii9PVwj_T14R3Fdjq7HUqj8HBWxd1_ObuVw52NFb1H9W_-_pD20BB8nLr12eYpIdbJhEJdskKnyPmWcYRIaH6tjp0GmuSip6JkTcTmOZgvCn7q5jd8aCRkzQ9h3I8SdnL8i6vofcBGOJ84RIoK472-iNq5");'></div>
+<div class="flex flex-col items-center gap-2">
+<p class="text-primary text-8xl font-black leading-tight tracking-[-0.03em]">404</p>
+<p class="text-[#111618] dark:text-gray-300 text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px]">Oops! Something went wrong</p>
+<p class="text-[#111618] dark:text-gray-400 text-sm font-normal leading-normal max-w-[480px]">We can't seem to find the page you're looking for.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors" onclick="window.location.href='Landing Page.html'">
+<span class="truncate">Back to Home</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

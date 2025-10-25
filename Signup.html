@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up - SPORTS4AUTISM CARETAKER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2094f3",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101a22",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .password-toggle .eye-slash {
+            display: block;
+        }
+        .password-toggle .eye {
+            display: none;
+        }
+        .password-toggle.show .eye-slash {
+            display: none;
+        }
+        .password-toggle.show .eye {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-col lg:flex-row flex-1">
+<div class="lg:w-1/2 w-full bg-background-light dark:bg-background-dark flex items-center justify-center p-8 relative">
+<div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBIGXPESiFGFBf9JwhZADVvuExfeTD_S67Q4LXckGwT_Pz_5Q086c7712HBYQkbOdtMcLDtGyaUC16U0S070BL2luK2Y8hir5fobo9-AM_sNM7znC6vg4Wv_iFcBPwcamS9YHQQXznWAy8vOXxarnHKSb8gzOtQ9qpEy1nf-HpXVJGLlo_F9PPcejLJ8arsZdOlrMq1wVUV5eppIjHuhUQqmzrwqjc3wrKxxX6sfsMEKVPhm_tHdMjDwvHbV5Lt1J-CK165zkNmi_A');"></div>
+<div class="z-10 text-center">
+<img class="w-full max-w-lg mx-auto" data-alt="Animated illustration of a doctor, a child, a parent, and an app developer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAdKF9SSpIAF-63R5z46C-5fo8dOiMahnHXZMgFeGFTLj3WgH0C2NTejgrSwU4QNhWBSDAQ4TT5hf8DhKPlNbbboPp07fRBfrdChZe01uc6sZ6SDBswXeVvITmMm1MPAyA5xNALCv2U6DxDybVlEEJPUYuh9RbID2uNDWUMYviUN0Hs4_sDoYRS65nFwcopiF5fR1KPtMTErF4Yi0_WMI3qmhAsXQ9lOL_2M1A_IZb377EQfMMMMjiBGh7407UNWygCt1Dgz-R8Eo"/>
+<div class="relative inline-block mt-4">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-[#FFD966] rounded-full"></div>
+<div class="absolute -bottom-4 -right-4 w-16 h-16 bg-primary/30 rounded-full"></div>
+<div class="relative bg-[#FFD966] border-2 border-primary rounded-xl p-4 shadow-lg inline-block">
+<h1 class="text-[#0d151c] tracking-light text-[32px] font-bold leading-tight px-4 text-center">Start Your Journey Today</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 w-full bg-white dark:bg-background-dark flex items-center justify-center p-8">
+<div class="w-full max-w-md">
+<div class="flex flex-col gap-6">
+<div class="text-left">
+<p class="text-[#0d151c] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Create Your Account</p>
+</div>
+<div class="flex flex-col gap-4">
+<label class="flex flex-col">
+<p class="text-[#0d151c] dark:text-gray-300 text-base font-medium leading-normal pb-2">Full Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d151c] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#cedde8] dark:border-gray-600 bg-background-light dark:bg-background-dark h-14 placeholder:text-[#49779c] p-[15px] text-base font-normal leading-normal" placeholder="Enter your full name" value=""/>
+</label>
+<label class="flex flex-col">
+<p class="text-[#0d151c] dark:text-gray-300 text-base font-medium leading-normal pb-2">Email ID</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d151c] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#cedde8] dark:border-gray-600 bg-background-light dark:bg-background-dark h-14 placeholder:text-[#49779c] p-[15px] text-base font-normal leading-normal" placeholder="Enter your email address" type="email" value=""/>
+</label>
+<label class="flex flex-col">
+<p class="text-[#0d151c] dark:text-gray-300 text-base font-medium leading-normal pb-2">I am a...</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d151c] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#cedde8] dark:border-gray-600 bg-background-light dark:bg-background-dark h-14 placeholder:text-[#49779c] p-[15px] text-base font-normal leading-normal appearance-none bg-[url('data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2724%27%20height=%2724%27%20viewBox=%270%200%2024%2024%27%20fill=%27none%27%20stroke=%27%2349779c%27%20stroke-width=%272%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%3e%3cpolyline%20points=%276%209%2012%2015%2018%209%27%3e%3c/polyline%3e%3c/svg%3e')] bg-no-repeat bg-right_1rem_center">
+<option>Parent</option>
+<option>Caregiver</option>
+<option>Therapist</option>
+</select>
+</label>
+<label class="flex flex-col relative">
+<p class="text-[#0d151c] dark:text-gray-300 text-base font-medium leading-normal pb-2">Password</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d151c] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#cedde8] dark:border-gray-600 bg-background-light dark:bg-background-dark h-14 placeholder:text-[#49779c] p-[15px] pr-12 text-base font-normal leading-normal" id="password" placeholder="Enter your password" type="password" value=""/>
+<button class="password-toggle absolute right-4 top-[46px] text-primary cursor-pointer transition-transform duration-300" onclick="togglePasswordVisibility('password', this)" type="button">
+<span class="material-symbols-outlined eye-slash">visibility_off</span>
+<span class="material-symbols-outlined eye">visibility</span>
+</button>
+</label>
+<label class="flex flex-col relative">
+<p class="text-[#0d151c] dark:text-gray-300 text-base font-medium leading-normal pb-2">Confirm Password</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d151c] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#cedde8] dark:border-gray-600 bg-background-light dark:bg-background-dark h-14 placeholder:text-[#49779c] p-[15px] pr-12 text-base font-normal leading-normal" id="confirmPassword" placeholder="Confirm your password" type="password" value=""/>
+<button class="password-toggle absolute right-4 top-[46px] text-primary cursor-pointer transition-transform duration-300" onclick="togglePasswordVisibility('confirmPassword', this)" type="button">
+<span class="material-symbols-outlined eye-slash">visibility_off</span>
+<span class="material-symbols-outlined eye">visibility</span>
+</button>
+</label>
+</div>
+<div class="flex flex-col gap-4 mt-4">
+<button class="flex items-center justify-center w-full h-14 rounded-lg bg-primary text-white text-base font-bold leading-normal transition-colors hover:bg-primary/90" onclick="window.location.href='Dashboard.html'">Sign Up</button>
+<button class="flex items-center justify-center w-full h-14 rounded-lg bg-transparent text-primary dark:text-primary border border-primary dark:border-primary/50 text-base font-bold leading-normal transition-colors hover:bg-primary/10" onclick="window.location.href='Landing Page.html'">Back to Home Page</button>
+</div>
+<p class="text-center text-sm text-[#49779c] dark:text-gray-400">
+                            Already have an account? <a class="font-semibold text-primary hover:underline" href="Login Page.html">Login</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+        function togglePasswordVisibility(inputId, button) {
+            const passwordInput = document.getElementById(inputId);
+            const isPassword = passwordInput.type === 'password';
+            passwordInput.type = isPassword ? 'text' : 'password';
+            button.classList.toggle('show');
+        }
+    </script>
+
+</body></html>

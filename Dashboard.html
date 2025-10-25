@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SPORTS4AUTISM Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#06a2db",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0f1d23",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a2a32",
+                        "text-light": "#2D3748",
+                        "text-dark": "#e2e8f0",
+                        "text-muted-light": "#718096",
+                        "text-muted-dark": "#a0aec0",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex h-screen">
+<div class="flex flex-col flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 dark:border-gray-700 px-6 py-3 bg-card-light dark:bg-card-dark shadow-sm">
+<div class="flex items-center gap-4">
+<svg class="size-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+<h1 class="text-xl font-bold tracking-[-0.015em] hidden md:block">SPORTS4AUTISM</h1>
+</div>
+<h2 class="text-lg font-bold text-center absolute left-1/2 -translate-x-1/2">DASHBOARD</h2>
+<div class="flex items-center gap-4">
+<button class="relative flex items-center justify-center rounded-full h-10 w-10 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1 right-1 block h-2 w-2 rounded-full bg-red-500"></span>
+</button>
+<img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 cursor-pointer" data-alt="Caretaker's profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC2lJvPOW42UfU_XwoF1r-pnyec0-MBl_wLcWGULQ5i_ndus1ArENQmO2JqWpSJjSezRUkwC-e2qo07lT4q9jB64Z6vCqXjcb5ApmRKCklwefZWvesA9pVscObyp8l3rGuXUXr_UzUBtrwFlkUsDoQ2tNfSuJ4Rhdr9vTEPQ1GgagHw4Od6ecJM3iVRwUvTl_fbxulFiQe7WZoc2yWbJaFQNG6NFDyDuiRnHHbk5JENs7RblUYyicsuxwAXY_57wEkiRcIwaj_4o4" onclick="window.location.href='Doctor profile.html'"/>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-6 lg:p-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div>
+<p class="text-3xl font-black leading-tight tracking-[-0.033em]">Welcome back, Dr. Anya!</p>
+<p class="text-text-muted-light dark:text-text-muted-dark">Here's a look at your patients' progress.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">+ Check New</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-gray-700 text-text-light dark:text-text-dark text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+<span class="truncate">Add New Patient</span>
+</button>
+</div>
+</div>
+<div class="mb-8">
+<div class="flex w-full sm:w-80 h-11 items-center justify-center rounded-lg bg-gray-200 dark:bg-gray-700 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-card-light has-[:checked]:dark:bg-card-dark has-[:checked]:shadow-md text-text-muted-light dark:text-text-muted-dark has-[:checked]:text-text-light has-[:checked]:dark:text-text-dark text-sm font-medium leading-normal transition-all">
+<span class="truncate">Monthly</span>
+<input class="invisible w-0" name="time-filter" type="radio" value="Monthly"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-card-light has-[:checked]:dark:bg-card-dark has-[:checked]:shadow-md text-text-muted-light dark:text-text-muted-dark has-[:checked]:text-text-light has-[:checked]:dark:text-text-dark text-sm font-medium leading-normal transition-all">
+<span class="truncate">Weekly</span>
+<input checked="" class="invisible w-0" name="time-filter" type="radio" value="Weekly"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-card-light has-[:checked]:dark:bg-card-dark has-[:checked]:shadow-md text-text-muted-light dark:text-text-muted-dark has-[:checked]:text-text-light has-[:checked]:dark:text-text-dark text-sm font-medium leading-normal transition-all">
+<span class="truncate">Day</span>
+<input class="invisible w-0" name="time-filter" type="radio" value="Day"/>
+</label>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div class="lg:col-span-1 flex flex-col gap-6">
+<div class="flex flex-col gap-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<p class="text-base font-semibold leading-normal">Children Login Activity</p>
+<p class="tracking-light text-[32px] font-bold leading-tight truncate">2,345</p>
+<div class="flex gap-1">
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">This Week</p>
+<p class="text-green-500 text-sm font-medium leading-normal flex items-center gap-1"><span class="material-symbols-outlined text-base">arrow_upward</span>+15%</p>
+</div>
+<div class="flex min-h-[180px] flex-1 flex-col gap-4 py-4">
+<svg fill="none" height="148" preserveAspectRatio="none" viewBox="-3 0 478 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H326.769H0V109Z" fill="url(#paint0_linear_1)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#06a2db" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#06a2db" stop-opacity="0.3"></stop>
+<stop offset="1" stop-color="#06a2db" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1 flex flex-col gap-6">
+<div class="relative rounded-lg bg-card-light dark:bg-card-dark p-6 shadow-sm border border-gray-200 dark:border-gray-700 h-full flex flex-col justify-between" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Cg fill-rule=\'evenodd\'%3E%3Cg fill=\'%23a6c0c8\' fill-opacity=\'0.1\'%3E%3Cpath opacity=\'.5\' d=\'M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+<h3 class="text-lg font-bold">Latest from Sports4Autism</h3>
+<div class="flex-1 flex items-center justify-center">
+<p class="text-text-muted-light dark:text-text-muted-dark text-center italic">"The only disability in life is a bad attitude." - Scott Hamilton</p>
+</div>
+<div class="flex justify-end">
+<p class="font-semibold text-text-muted-light dark:text-text-muted-dark">S4A Team</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1 flex flex-col gap-6">
+<div class="rounded-lg bg-card-light dark:bg-card-dark p-6 shadow-sm border border-gray-200 dark:border-gray-700 h-full flex flex-col">
+<h3 class="text-lg font-bold mb-2">New Update!</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm mb-4 flex-1">We've updated our patient progress tracking module with new metrics and a more intuitive interface.</p>
+<button class="mt-auto self-start flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">
+<span class="truncate">Explore</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-2 flex flex-col gap-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<h3 class="text-lg font-semibold">Health Trend</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2">
+<div>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">Motor Skills</p>
+<p class="text-2xl font-bold">78% <span class="text-green-500 text-sm font-medium ml-1">↑ 5%</span></p>
+</div>
+<div>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">Coordination</p>
+<p class="text-2xl font-bold">85% <span class="text-green-500 text-sm font-medium ml-1">↑ 8%</span></p>
+</div>
+</div>
+<div class="flex-1 mt-4">
+<svg fill="none" height="100%" viewBox="0 0 400 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 100 C 50 80, 100 120, 150 90 S 250 20, 300 60 S 400 100, 400 100 L 400 150 L 0 150 Z" fill="url(#grad1)"></path>
+<path d="M0 100 C 50 80, 100 120, 150 90 S 250 20, 300 60 S 400 100, 400 100" fill="none" stroke="#06a2db" stroke-width="2"></path>
+<defs>
+<linearGradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#06a2db;stop-opacity:0.4"></stop>
+<stop offset="100%" style="stop-color:#06a2db;stop-opacity:0"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="lg:col-span-1 flex flex-col gap-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<h3 class="text-lg font-semibold mb-4">Checkup Progress</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="p-3 bg-primary/10 rounded-full"><span class="material-symbols-outlined text-primary">calendar_today</span></div>
+<div>
+<p class="font-semibold">Next Checkup: Leo</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">June 25, 2024</p>
+</div>
+</div>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+</div>
+<div class="flex items-center gap-4">
+<div class="p-3 bg-primary/10 rounded-full"><span class="material-symbols-outlined text-primary">calendar_today</span></div>
+<div>
+<p class="font-semibold">Next Checkup: Mia</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">July 02, 2024</p>
+</div>
+</div>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 40%"></div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1 flex flex-col gap-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<h3 class="text-lg font-semibold mb-4">Medical Information</h3>
+<div class="flex items-center gap-4">
+<img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-20" data-alt="Caretaker's professional headshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy_0zjC_fxIdSU6uc3v081GlVLv-ILGyf6PIXXkZBamxCuZfvMbw5D9IYRpzhfPopE4--vOyXja6_5XeJlnPS5ZlIO0C8JlqBa0LsdQr4CAYiFxHBcDGd53WtYVRc8WdwK3E3ZzTzFq4iUZTokx-0jlildljKtWevyBJPaTiY7Q10XOOn80glyC8mMSDlRdHsFtqBgXRYa29YTzGDzoP0-MRdl_IVDjFo1D13wu0S_Md24NrOJ8vU8APAQ9P8xHNg7NzGM1xT3OcA"/>
+<div>
+<p class="font-bold text-lg">Dr. Anya Sharma</p>
+<p class="text-sm text-primary">NMR: 12345</p>
+</div>
+</div>
+<div class="mt-4 space-y-2 text-sm">
+<p><strong class="text-text-muted-light dark:text-text-muted-dark">Organization:</strong> Hope Autism Center</p>
+<p><strong class="text-text-muted-light dark:text-text-muted-dark">Age:</strong> 34</p>
+<p><strong class="text-text-muted-light dark:text-text-muted-dark">Designation:</strong> Senior Therapist</p>
+<p><strong class="text-text-muted-light dark:text-text-muted-dark">ID Code:</strong> S4A-THER-021</p>
+</div>
+</div>
+<div class="lg:col-span-2 flex flex-col gap-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold">Monthly Patient Report</h3>
+<select class="bg-gray-100 dark:bg-gray-700 border-none rounded-md text-sm">
+<option>This Month</option>
+<option>Last Month</option>
+</select>
+</div>
+<div class="flex-1 mt-4">
+<div class="flex flex-col gap-4">
+<div class="grid grid-cols-[100px_1fr] items-center gap-4 text-sm">
+<span class="text-text-muted-light dark:text-text-muted-dark">Coordination</span>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-4"><div class="bg-primary h-4 rounded-full text-white text-xs flex items-center justify-center" style="width: 82%">82%</div></div>
+</div>
+<div class="grid grid-cols-[100px_1fr] items-center gap-4 text-sm">
+<span class="text-text-muted-light dark:text-text-muted-dark">Motor Skills</span>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-4"><div class="bg-primary h-4 rounded-full text-white text-xs flex items-center justify-center" style="width: 76%">76%</div></div>
+</div>
+<div class="grid grid-cols-[100px_1fr] items-center gap-4 text-sm">
+<span class="text-text-muted-light dark:text-text-muted-dark">Cognitive Skills</span>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-4"><div class="bg-primary h-4 rounded-full text-white text-xs flex items-center justify-center" style="width: 65%">65%</div></div>
+</div>
+<div class="grid grid-cols-[100px_1fr] items-center gap-4 text-sm">
+<span class="text-text-muted-light dark:text-text-muted-dark">Eye Contact</span>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-4"><div class="bg-primary h-4 rounded-full text-white text-xs flex items-center justify-center" style="width: 88%">88%</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-3 flex flex-col gap-6 rounded-lg border border-gray-200 dark:border-gray-700 bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<h3 class="text-lg font-semibold mb-4">My Patients</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<a class="group" href="Children Dashboard.html">
+<div class="bg-background-light dark:bg-background-dark p-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out group-hover:shadow-lg group-hover:-translate-y-1 group-hover:ring-2 group-hover:ring-primary/50 group-active:scale-95">
+<div class="flex items-center gap-4">
+<img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Photo of patient Leo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwQwQYrxr3dulmbis605AhbBurKzQoh-acrycwckzfXxAI0TkPTrT2_kFXJfTY-DBfXIojbS8uNRvwyeoR5TGcUqmB8FH069vRGihpCAOBuRIR3q6FapcjPHnZYmtSRARptn2sASmJtFtDjV0E7lM1eHgvov5lplFMFWSBT-srZOozCSaz7BVIsQ7lekuWyc8DfgRmIIl7nbKblZXIqf1NsgAAGiRnmxxxVUDTz28xAcrPCcmh4ZWLPmMl2aKWYG1hayhJeBniZxM"/>
+<div>
+<p class="font-bold">Leo K.</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Age: 6</p>
+</div>
+</div>
+<div class="mt-3 text-xs flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-green-500"></span>
+<span>Active Session</span>
+</div>
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark mt-1">Sunrise Hospital</p>
+</div>
+</a>
+<a class="group" href="Children Dashboard.html">
+<div class="bg-background-light dark:bg-background-dark p-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out group-hover:shadow-lg group-hover:-translate-y-1 group-hover:ring-2 group-hover:ring-primary/50 group-active:scale-95">
+<div class="flex items-center gap-4">
+<img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Photo of patient Mia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsIORTsTaccdbLELbbE5hPyLEa9UAcLsn-BL3lL4QeznkL-kRm4bvQTmfjHVx2QbFHkbqzlpf3j3bp4Xnqk-CKPouzV2sFZ703X_M3pntH3tRIPpb7OWI9J7yJA7_0UfX0lsZuoC3HR4GrgnC0lzAfCOBNiXysNfhk-A8YutE8JYzTZE12Zslw6eSifOIrjw3ct9HqJLwo0wI-6pirt2C0nqVhI5wPLT9emSBy9IqHZmY3OHBcgiBH6L-CMQ8tWTyPRgq0L3_UQd4"/>
+<div>
+<p class="font-bold">Mia W.</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Age: 8</p>
+</div>
+</div>
+<div class="mt-3 text-xs flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-yellow-500"></span>
+<span>Last visit: 2 days ago</span>
+</div>
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark mt-1">Hope Autism Center</p>
+</div>
+</a>
+<a class="group" href="Children Dashboard.html">
+<div class="bg-background-light dark:bg-background-dark p-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out group-hover:shadow-lg group-hover:-translate-y-1 group-hover:ring-2 group-hover:ring-primary/50 group-active:scale-95">
+<div class="flex items-center gap-4">
+<img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Photo of patient Sam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADegH7F-jPNpMmsv6Yd1GUFeU5pF2sTNVsll9RjdCcHxr2DkZVSsxTtA_91rf19bMbLd4cYVx2Zku_oKXS3EHFTB6BJCVDIgAomRutu9KzUrzSm42_o9CNehxCJ1mvwWYbIKrSPiD9m1IFQpESlqU_WGFAFyAHzHu0t_yXypvU93zv973LMgSt9aUpdgmSHZojCm7m8xm2_HnQpdaDHY3ve0Kb6xkDy31lQq-rUzgwn1JaV9DuaCg9rM7D1XTospVwTt9WSQTigEA"/>
+<div>
+<p class="font-bold">Sam T.</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Age: 7</p>
+</div>
+</div>
+<div class="mt-3 text-xs flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-green-500"></span>
+<span>Active Session</span>
+</div>
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark mt-1">Sunrise Hospital</p>
+</div>
+</a>
+<a class="group" href="Children Dashboard.html">
+<div class="bg-background-light dark:bg-background-dark p-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out group-hover:shadow-lg group-hover:-translate-y-1 group-hover:ring-2 group-hover:ring-primary/50 group-active:scale-95">
+<div class="flex items-center gap-4">
+<img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Photo of patient Chloe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4-3U6uodqq6pV4c7AcXCV3oRMJqCjcGu1nvIOXSXfiNBD79te-8fthCRhlgKWMKzWIVmdoJt0cvfyTDdOqagNyA4RvExpKTVF2n2DMBdZ2eeAlywcg6IsNRv9Ze46PNKepUILiBktZvZNE9O8KmJslpJALFbY5ik5GL9stKosUNdU_cqXBUbXrZCrFX5KbzwFatzzPPTpzp5hZQH7ropjQHZV5ksBWRbWT8TzHGMOr7RILPqevOVHmXKqLVuBfRQDLGiTjfSAszw"/>
+<div>
+<p class="font-bold">Chloe L.</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Age: 9</p>
+</div>
+</div>
+<div class="mt-3 text-xs flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-yellow-500"></span>
+<span>Last visit: 4 days ago</span>
+</div>
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark mt-1">Hope Autism Center</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

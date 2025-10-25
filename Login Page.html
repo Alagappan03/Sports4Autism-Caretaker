@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - SPORTS4AUTISM CARETAKER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#2094f3",
+              "background-light": "#f5f7f8",
+              "background-dark": "#101a22",
+            },
+            fontFamily: {
+              "display": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+      .password-toggle-checkbox:checked ~ .password-toggle-icon .eye-open {
+        display: inline;
+      }
+      .password-toggle-checkbox:checked ~ .password-toggle-icon .eye-slash {
+        display: none;
+      }
+      .password-toggle-checkbox ~ .password-toggle-icon .eye-open {
+        display: none;
+      }
+      .password-toggle-checkbox ~ .password-toggle-icon .eye-slash {
+        display: inline;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex-grow flex">
+<div class="w-1/2 bg-primary/20 p-8 flex-col justify-center items-center hidden lg:flex">
+<div class="w-full max-w-lg">
+<img class="w-full h-auto rounded-xl shadow-lg" data-alt="Animated illustration showing a female doctor in a white coat, a male software developer holding a laptop, a parent, and a joyful child, all interacting in a positive and supportive environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpqlnIbICl7EO4lyLnRWwc_vuhv1uxd4YXCMQM8rBMGiSxWLu6dsPtwi-D8X_vU6SM-znZVBawVAvRB0NaXQF80JaC4j7KIJxnZr5zvPmzahg6-yD4i3ou6zFbiw_BIXrLPWKTndKqHcfgi6t3n0beZv8JzAlBXHAmLVrLokw2cfIjiBnJ20Ujvg9w4fLVVAiCMFL-fqIZszmSx0hXmKT5PuTasY5DFmeiD-MglR6_rtd95mKuYPzAgEBo-qZcmWZSRrXFu0vcgfQ"/>
+<div class="relative mt-8">
+<div class="absolute -top-4 -left-4 w-12 h-12 bg-[#cceaff] rounded-full"></div>
+<div class="relative bg-white dark:bg-background-dark p-6 rounded-lg border-2 border-primary shadow-lg">
+<p class="text-[#0d151c] dark:text-slate-50 text-center text-lg font-medium leading-normal">"Where Therapy Becomes Playtime, Movement for a Brighter Tomorrow"</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 bg-background-light dark:bg-background-dark flex items-center justify-center p-6 sm:p-12">
+<div class="w-full max-w-md space-y-6">
+<div class="text-center lg:text-left">
+<h1 class="text-4xl font-black text-[#0d151c] dark:text-slate-50">Welcome Back!</h1>
+<p class="mt-2 text-base text-[#49779c] dark:text-slate-400">Please enter your details to login.</p>
+</div>
+<form class="space-y-6">
+<div>
+<label class="flex flex-col">
+<p class="text-[#0d151c] dark:text-slate-50 text-base font-medium leading-normal pb-2">Email ID</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d151c] dark:text-slate-50 focus:outline-0 focus:ring-0 border border-[#cedde8] dark:border-slate-700 bg-background-light dark:bg-background-dark focus:border-primary h-14 placeholder:text-[#49779c] dark:placeholder-slate-400 p-4 text-base font-normal leading-normal" placeholder="Enter your email" type="email"/>
+</label>
+</div>
+<div>
+<label class="flex flex-col">
+<p class="text-[#0d151c] dark:text-slate-50 text-base font-medium leading-normal pb-2">Password</p>
+<div class="relative w-full">
+<input class="form-input password-toggle-checkbox peer hidden" id="password-toggle" type="checkbox"/>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d151c] dark:text-slate-50 focus:outline-0 focus:ring-0 border border-[#cedde8] dark:border-slate-700 bg-background-light dark:bg-background-dark focus:border-primary h-14 placeholder:text-[#49779c] dark:placeholder-slate-400 p-4 pr-12 text-base font-normal leading-normal peer-checked:!text-black peer-checked:[type=" id="password" placeholder="Enter your password" text"]"="" type="password"/>
+<label class="absolute inset-y-0 right-0 flex items-center pr-4 cursor-pointer password-toggle-icon" for="password-toggle">
+<span class="material-symbols-outlined text-primary transition-transform duration-300 eye-open">visibility</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 eye-slash">visibility_off</span>
+</label>
+</div>
+</label>
+<p class="text-primary text-sm font-normal leading-normal pt-2 text-right underline cursor-pointer" onclick="window.location.href='Forget Password.html'">Forgot Password?</p>
+</div>
+<div class="flex flex-col gap-3">
+<button type="button" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-slate-50 text-base font-bold leading-normal tracking-[0.015em] w-full" onclick="window.location.href='Dashboard.html'">
+<span class="truncate">Login</span>
+</button>
+<a href="Landing Page.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#e7eef4] dark:bg-slate-800 text-[#0d151c] dark:text-slate-50 text-base font-bold leading-normal tracking-[0.015em] w-full text-center">
+  <span class="truncate">Back to Home Page</span>
+</a>
+</div>
+</form>
+<p class="text-[#49779c] dark:text-slate-400 text-sm font-normal leading-normal text-center">
+                        Don't have an account? <a class="underline text-primary" href="Signup.html">Sign Up</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

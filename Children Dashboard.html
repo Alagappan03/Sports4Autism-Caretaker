@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sports4Autism Caretaker Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#009DDC",
+                        "background-light": "#F5F7FA",
+                        "background-dark": "#0f1c23",
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .group:focus-within .group-focus-within\:block {
+            display: block;
+        }
+        .group:focus-within .group-focus-within\:rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 lg:px-10 xl:px-20 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-7xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-4 sm:px-6 lg:px-8 py-4">
+<div class="flex items-center gap-3 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight">SPORTS4AUTISM CARETAKER</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center">
+<h2 class="text-gray-900 dark:text-white text-lg font-medium leading-normal">Child Dashboard</h2>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative group">
+<button class="flex items-center justify-center gap-x-2 rounded-xl border-2 border-primary bg-white dark:bg-background-dark h-11 px-4 text-gray-900 dark:text-white text-sm font-medium leading-normal shadow-sm cursor-pointer">
+<span class="material-symbols-outlined text-primary">gamepad</span>
+<p class="truncate">All Games</p>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-focus-within:rotate-180">arrow_drop_down</span>
+</button>
+<div class="absolute top-full right-0 mt-2 w-56 origin-top-right rounded-lg bg-white dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden group-focus-within:block transition-all duration-300 ease-in-out z-10">
+<div class="py-1">
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-primary">gamepad</span> All Games
+                                        </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-primary">cloud</span> Balloon Popping
+                                        </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-primary">psychology</span> Cognitive Skill
+                                        </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700" href="#">
+<span class="material-symbols-outlined text-primary">egg</span> Catching the Egg
+                                        </a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="p-4 sm:p-6 lg:p-8 space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 rounded-xl p-6 bg-gradient-to-br from-blue-400 to-cyan-300 shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-white text-3xl">calendar_today</span>
+</div>
+<p class="text-white text-4xl font-bold">7 days</p>
+<p class="text-white/80 text-base font-medium">Active this week</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl p-6 bg-gradient-to-br from-purple-400 to-pink-400 shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-white text-3xl">hourglass_top</span>
+</div>
+<p class="text-white text-4xl font-bold">2h 35m</p>
+<p class="text-white/80 text-base font-medium">Spent today</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl p-6 bg-gradient-to-br from-orange-400 to-yellow-300 shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-white text-3xl">badge</span>
+<span class="bg-white/30 text-white text-xs font-bold px-2 py-1 rounded-full">Premium</span>
+</div>
+<p class="text-white text-4xl font-bold">Arjun Patel</p>
+<p class="text-white/80 text-base font-medium">PSI-2024-001</p>
+</div>
+</div>
+<div class="flex justify-center px-4 py-3">
+<div class="flex h-12 flex-1 max-w-lg items-center justify-center rounded-xl bg-gray-200 dark:bg-gray-800 p-1.5" x-data="{ active: 'week' }">
+<button :class="{'bg-primary text-white font-bold scale-105': active === 'today', 'bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-400': active !== 'today'}" @click="active = 'today'" class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-4 text-sm font-medium leading-normal transition-all duration-300 hover:bg-primary/20">
+<span class="truncate">Today</span>
+</button>
+<button :class="{'bg-primary text-white font-bold scale-105': active === 'week', 'bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-400': active !== 'week'}" @click="active = 'week'" class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-4 text-sm font-medium leading-normal transition-all duration-300 hover:bg-primary/20">
+<span class="truncate">This Week</span>
+</button>
+<button :class="{'bg-primary text-white font-bold scale-105': active === 'month', 'bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-400': active !== 'month'}" @click="active = 'month'" class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-4 text-sm font-medium leading-normal transition-all duration-300 hover:bg-primary/20">
+<span class="truncate">This Month</span>
+</button>
+<button :class="{'bg-primary text-white font-bold scale-105': active === 'all', 'bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-400': active !== 'all'}" @click="active = 'all'" class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-4 text-sm font-medium leading-normal transition-all duration-300 hover:bg-primary/20">
+<span class="truncate">All Time</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6 shadow-sm transition-all duration-300">
+<p class="text-gray-900 dark:text-white text-base font-medium">Eye-Hand Coordination in Game</p>
+<p class="text-gray-900 dark:text-white tracking-tight text-2xl font-bold">Coordination Score (%)</p>
+<div class="flex gap-2 items-center">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal">S1-S7</p>
+<p class="text-green-500 text-sm font-medium flex items-center"><span class="material-symbols-outlined text-base">arrow_upward</span>+5%</p>
+</div>
+<div class="flex min-h-[200px] flex-1 flex-col gap-8 py-4">
+<svg class="transition-all duration-500 ease-out" fill="none" height="100%" preserveAspectRatio="none" viewBox="0 0 478 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H0V109Z" fill="url(#paint0_linear_chart)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#009DDC" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_chart" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#009DDC" stop-opacity="0.3"></stop>
+<stop offset="1" stop-color="#009DDC" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+<div class="flex justify-around">
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S1</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S2</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S3</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S4</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S5</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S6</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S7</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6 shadow-sm transition-all duration-300">
+<p class="text-gray-900 dark:text-white text-base font-medium">Activeness Breakdown</p>
+<div class="flex-1 flex items-center justify-center relative min-h-[260px] py-4">
+<svg class="w-full h-full transform transition-transform duration-500" viewBox="0 0 36 36">
+<circle class="stroke-current text-gray-200 dark:text-gray-700" cx="18" cy="18" fill="none" r="15.9155" stroke-width="3"></circle>
+<circle class="stroke-current text-purple-500" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="25, 100" stroke-dashoffset="25" stroke-width="3.5" style="transition: stroke-dasharray 0.5s ease-in-out, stroke-dashoffset 0.5s ease-in-out;"></circle>
+<circle class="stroke-current text-cyan-500" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="30, 100" stroke-dashoffset="0" stroke-width="3.5" style="transition: stroke-dasharray 0.5s ease-in-out, stroke-dashoffset 0.5s ease-in-out;"></circle>
+<circle class="stroke-current text-green-500" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="20, 100" stroke-dashoffset="-30" stroke-width="3.5" style="transition: stroke-dasharray 0.5s ease-in-out, stroke-dashoffset 0.5s ease-in-out;"></circle>
+<circle class="stroke-current text-yellow-500" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="15, 100" stroke-dashoffset="-50" stroke-width="3.5" style="transition: stroke-dasharray 0.5s ease-in-out, stroke-dashoffset 0.5s ease-in-out;"></circle>
+<circle class="stroke-current text-orange-500" cx="18" cy="18" fill="none" r="15.9155" stroke-dasharray="10, 100" stroke-dashoffset="-65" stroke-width="3.5" style="transition: stroke-dasharray 0.5s ease-in-out, stroke-dashoffset 0.5s ease-in-out;"></circle>
+</svg>
+<div class="absolute flex flex-col items-center text-center">
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium">Total Active Time</p>
+<p class="text-gray-900 dark:text-white text-xl font-bold">2h 35m</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-cyan-500"></div><span class="text-gray-700 dark:text-gray-300">Running (30%)</span></div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-purple-500"></div><span class="text-gray-700 dark:text-gray-300">Jumping (25%)</span></div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-green-500"></div><span class="text-gray-700 dark:text-gray-300">Hand Activities (20%)</span></div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-yellow-500"></div><span class="text-gray-700 dark:text-gray-300">Balance (15%)</span></div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-orange-500"></div><span class="text-gray-700 dark:text-gray-300">Other (10%)</span></div>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-background-dark p-6 shadow-sm transition-all duration-300">
+<p class="text-gray-900 dark:text-white text-base font-medium">Reflexive Time - Task Completion</p>
+<p class="text-gray-900 dark:text-white tracking-tight text-2xl font-bold">Successful Task Completion (%)</p>
+<div class="flex gap-2 items-center">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal">S1-S7</p>
+<p class="text-green-500 text-sm font-medium flex items-center"><span class="material-symbols-outlined text-base">arrow_upward</span>+12%</p>
+</div>
+<div class="grid min-h-[200px] gap-x-4 gap-y-2 grid-cols-[auto_1fr] items-center py-4">
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S1</p><div class="h-3 rounded-full bg-orange-400 w-[55%] transition-all duration-500"></div>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S2</p><div class="h-3 rounded-full bg-yellow-400 w-[70%] transition-all duration-500"></div>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S3</p><div class="h-3 rounded-full bg-green-500 w-[85%] transition-all duration-500"></div>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S4</p><div class="h-3 rounded-full bg-green-500 w-[90%] transition-all duration-500"></div>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S5</p><div class="h-3 rounded-full bg-red-500 w-[35%] transition-all duration-500"></div>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S6</p><div class="h-3 rounded-full bg-yellow-400 w-[65%] transition-all duration-500"></div>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-bold">S7</p><div class="h-3 rounded-full bg-green-500 w-[95%] transition-all duration-500"></div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-11 px-6 border border-primary text-primary dark:text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/10 transition-colors" onclick="window.location.href='Dashboard.html'">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="truncate">Back to Dashboard</span>
+</button>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+<script defer="" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
+</body></html>

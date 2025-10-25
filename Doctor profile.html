@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Therapist Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#0694db",
+            "background-light": "#f5f7f8",
+            "background-dark": "#0f1c23",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    @keyframes progress {
+      from {
+        stroke-dashoffset: 283;
+      }
+    }
+    .gauge-circle {
+      animation: progress 2s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-5xl flex-1">
+<div class="bg-white dark:bg-background-dark rounded-lg shadow-sm">
+<div class="flex p-4 @container">
+<div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+<div class="flex gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32" data-alt="AI-generated photo of Dr. Anya Sharma" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAe8aYDG3OEGnQIrZOwTEx0-n25C8D6fUtSpiiZHv-9zKpJ81qrS6EDaVWFu3UcXVQh5vhy1RYdJBy655lB6o7QO5oVL7cSmPkP_AJZIV4YsjgjWIwRGHRdjMeVnH7f39KR-7J2wWjpPG7U86ziXczuh0XphC9KCWjRw1HtO5KlAW3vurVKkA-wp_gT3JpK-zq7-ljMFFNq9p0lZUNXAjtax9Idi_TQax_mCxtsiKApRiVatJBiepkvApxpVg4Ax-f-ZwiS59YK3jUe");'></div>
+<div class="flex flex-col justify-center">
+<p class="text-[#0d171c] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Dr. Anya Sharma</p>
+<p class="text-[#47819e] dark:text-gray-400 text-base font-normal leading-normal">Pediatric Therapist</p>
+<p class="text-[#47819e] dark:text-gray-400 text-base font-normal leading-normal">NMR #12345</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 px-4 py-3">
+<div class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#cee0e9] dark:border-gray-700 p-3 items-start hover:shadow-md transition-shadow">
+<p class="text-[#0d171c] dark:text-white tracking-light text-2xl font-bold leading-tight">150+</p>
+<div class="flex items-center gap-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Patients</p>
+</div>
+</div>
+<div class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#cee0e9] dark:border-gray-700 p-3 items-start hover:shadow-md transition-shadow">
+<p class="text-[#0d171c] dark:text-white tracking-light text-2xl font-bold leading-tight">20</p>
+<div class="flex items-center gap-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Active Sessions</p>
+</div>
+</div>
+<div class="flex min-w-[111px] flex-1 basis-[fit-content] flex-col gap-2 rounded-lg border border-[#cee0e9] dark:border-gray-700 p-3 items-start hover:shadow-md transition-shadow">
+<p class="text-[#0d171c] dark:text-white tracking-light text-2xl font-bold leading-tight">95%</p>
+<div class="flex items-center gap-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Success Rate</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 bg-white dark:bg-background-dark rounded-lg shadow-sm p-4">
+<h2 class="text-[#0d171c] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Detailed Information</h2>
+<div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-x-8">
+<div class="flex flex-col">
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pr-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Education</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">M.Sc in Clinical Psychology</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pr-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Experience</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">5+ years in pediatric therapy</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pr-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Specializations</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">Autism Spectrum Disorder, ADHD</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pr-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Languages</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">English, Hindi</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pr-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Working Hours</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">Mon - Fri, 9:00 AM - 5:00 PM</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pr-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Contact</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">anya.sharma@therapy.com</p>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pl-0 md:pl-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Skills</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">Applied Behavior Analysis (ABA), Picture Exchange Communication System (PECS)</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pl-0 md:pl-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Certifications</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">Board Certified Behavior Analyst (BCBA)</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pl-0 md:pl-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Awards</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">Excellence in Pediatric Care 2023</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#cee0e9] dark:border-gray-700 py-4 pl-0 md:pl-2">
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal">Treatment Approaches</p>
+<p class="text-[#0d171c] dark:text-white text-sm font-normal leading-normal">Play Therapy, Speech Therapy</p>
+</div>
+</div>
+</div>
+<div class="border-t border-solid border-t-[#cee0e9] dark:border-gray-700 mx-4"></div>
+<h2 class="text-[#0d171c] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-8 pb-3 pt-5">About</h2>
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal leading-normal px-8 pb-8"> Dr. Anya Sharma is a dedicated and compassionate pediatric therapist with over five years of experience specializing in Autism Spectrum Disorder and ADHD. She is committed to creating a supportive and engaging environment for children to thrive. Her approach is rooted in evidence-based practices like ABA and play therapy, tailored to each child's unique needs. Dr. Sharma believes in a strong partnership with parents and caretakers to ensure holistic development and long-term success. </p>
+</div>
+<div class="mt-8 bg-white dark:bg-background-dark rounded-lg shadow-sm p-4">
+<h2 class="text-[#0d171c] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Parent-Caretaker Bond</h2>
+<div class="p-4 grid grid-cols-1 sm:grid-cols-3 gap-8">
+<div class="flex flex-col items-center gap-2">
+<div class="relative w-32 h-32">
+<svg class="w-full h-full" viewBox="0 0 100 100">
+<circle class="text-gray-200 dark:text-gray-700" cx="50" cy="50" fill="transparent" r="45" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-primary gauge-circle" cx="50" cy="50" fill="transparent" r="45" stroke="currentColor" stroke-dasharray="283" stroke-dashoffset="calc(283 - (283 * 85) / 100)" stroke-linecap="round" stroke-width="10" transform="rotate(-90 50 50)"></circle>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center text-xl font-bold text-[#0d171c] dark:text-white">85%</span>
+</div>
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal">Communication</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="relative w-32 h-32">
+<svg class="w-full h-full" viewBox="0 0 100 100">
+<circle class="text-gray-200 dark:text-gray-700" cx="50" cy="50" fill="transparent" r="45" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-primary gauge-circle" cx="50" cy="50" fill="transparent" r="45" stroke="currentColor" stroke-dasharray="283" stroke-dashoffset="calc(283 - (283 * 92) / 100)" stroke-linecap="round" stroke-width="10" transform="rotate(-90 50 50)"></circle>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center text-xl font-bold text-[#0d171c] dark:text-white">92%</span>
+</div>
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal">Trust</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="relative w-32 h-32">
+<svg class="w-full h-full" viewBox="0 0 100 100">
+<circle class="text-gray-200 dark:text-gray-700" cx="50" cy="50" fill="transparent" r="45" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-primary gauge-circle" cx="50" cy="50" fill="transparent" r="45" stroke="currentColor" stroke-dasharray="283" stroke-dashoffset="calc(283 - (283 * 88) / 100)" stroke-linecap="round" stroke-width="10" transform="rotate(-90 50 50)"></circle>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center text-xl font-bold text-[#0d171c] dark:text-white">88%</span>
+</div>
+<p class="text-[#47819e] dark:text-gray-400 text-sm font-normal">Engagement</p>
+</div>
+</div>
+</div>
+<div class="flex justify-end mt-8">
+<button class="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition-colors" onclick="window.location.href='Dashboard.html'">
+<span class="material-symbols-outlined">arrow_back</span>
+<span>Back</span>
+</button>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
